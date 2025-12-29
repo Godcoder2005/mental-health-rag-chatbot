@@ -1,9 +1,7 @@
-fastapi
-uvicorn
+streamlit
 langchain
 langchain-community
 langchain-huggingface
-sentence-transformers
 faiss-cpu
-datasets
-pydantic
+sentence-transformers
+python-dotenv
