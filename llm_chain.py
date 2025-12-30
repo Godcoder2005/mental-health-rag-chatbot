@@ -2,8 +2,14 @@ from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
+
+HF_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+
+if HF_TOKEN is None:
+    raise ValueError("HUGGINGFACEHUB_API_TOKEN is not set")
 
 llm = HuggingFaceEndpoint(
     model="mistralai/Mistral-7B-Instruct-v0.2",
