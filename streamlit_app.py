@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon="🧠"
 )
 
-st.title("🧠 Akshith's Mental Health Chatbot")
+st.title("🧠 Chotu Mental Health Chatbot")
 st.caption("A supportive, non-judgmental AI companion")
 
 # Initialize chat history
